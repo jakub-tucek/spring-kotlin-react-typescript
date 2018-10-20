@@ -1,0 +1,9 @@
+build
+.idea
+.gradle
+*.iml
+out
+generated
+classes/*
+*.log
+gradlew.bat

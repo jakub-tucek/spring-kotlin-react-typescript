@@ -1,0 +1,54 @@
+{
+  "name": "web-react",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "dev:spring": "node scripts/spring-publisher.js './../web/out/production/resources/static' develop",
+    "dev:spring-gradle": "node scripts/spring-publisher.js './../web/build/resources/main/static' develop",
+    "build": "parcel build ./src/index.html --public-url '/'",
+    "build:spring": "node scripts/spring-publisher.js './../web/src/main/resources/static' production",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "engines": {
+    "node": ">= 8.11.0",
+    "npm": ">= 6.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/config/test-preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(test|spec).(ts|tsx|js)"
+    ]
+  },
+  "dependencies": {
+    "helpful-decorators": "^1.7.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "rxjs": "^6.3.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "@types/styled-components": "^4.0.1",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.0",
+    "react-test-renderer": "^16.5.2",
+    "react-testing-library": "^5.1.0",
+    "styled-components": "^4.0.2",
+    "ts-jest": "^23.10.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.3"
+  }
+}

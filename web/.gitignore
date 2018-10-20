@@ -1,0 +1,4 @@
+src/main/resources/static/src.*.js
+src/main/resources/static/src.*.map
+src/main/resources/static/src.*.css
+src/main/resources/templates/react.mustache
