@@ -1,4 +1,15 @@
-# core
+# Spring kotlin + react typescript
+
+This project is skeleton for integration of spring (in kotlin) and react (in typescript).
+
+Used technologies:
+
+- Spring boot
+- Mustache templates
+- Parcel bundler
+- React, Typescript, styled-components
+
+
 
 
 
@@ -25,8 +36,6 @@ In our case, it is file named **react.mustache**, which is after bundling copied
 
 
 #### Development
-
-
 For live javascript files in development you need to:
 
 1. first enable hot reload files in IDEA (check section below).
